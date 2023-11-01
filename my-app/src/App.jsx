@@ -5,14 +5,16 @@ import BuildingList from './components/BuildingList';
 import AddBuilding from './components/AddBuilding';
 import Credit from './components/Credit';
 
+//TODO: Create dropdowns for each entry in list, this displays the viewbuilding method
+//TODO: Make add button a popup button rather than whatever tf that is
+
+
 function App({ data }) {
-  // TODO: Update the following two variables to use the useState() hook
   const [filterText, setFilterText] = useState('');
   const [selectedBuilding, setSelectedBuilding] = useState(0);
   const [newList, setNewList] = useState(data);
 
   function filterUpdate(value) {
-    // TODO: Set the state of the filter text to the value being passed in
     setFilterText(value);
   }
 
@@ -25,16 +27,15 @@ function App({ data }) {
   }
 
   function selectedUpdate(id) {
-    // TODO: Set the state of the selected building to the id being passed in
     setSelectedBuilding(id);
   }
 
   return (
     <div className="bg">
       <div className="row">
-        <h1>UF Directory App</h1>
+        <h1>Temp MainPage "Pretend the data are a bunch of studies"</h1>
       </div>
-      {/* TODO: Edit Search component to include necessary props */}
+      {}
       <Search filterUpdate={filterUpdate}/>
       <main>
         <div className="row">
@@ -49,7 +50,7 @@ function App({ data }) {
                 </tr>
               </thead>
               <tbody>
-                {/* TODO: Edit BuildingList component to include necessary props */}
+                {}
                 <BuildingList
                   data={newList} filterText={filterText} selectedUpdate = {selectedUpdate}
                 />
