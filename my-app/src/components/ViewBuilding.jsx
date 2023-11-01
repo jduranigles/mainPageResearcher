@@ -1,6 +1,6 @@
 function ViewBuilding({data, selectedBuilding, removeBuilding}) {
-  // TODO: Find the corresponding data based off the selected building's id and display its data
-  const selected = data.find(building => building.id === selectedBuilding);
+  // TODO: Find the corresponding data based off the selected Building's id and display its data
+  const selected = data.find(Building => Building.id === selectedBuilding);
   function deleteBuilding(){
     removeBuilding(selectedBuilding);
   }

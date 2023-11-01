@@ -4,8 +4,9 @@ import ViewBuilding from './components/ViewBuilding';
 import BuildingList from './components/BuildingList';
 import AddBuilding from './components/AddBuilding';
 import Credit from './components/Credit';
+import DropdownBox from './components/DropdownBox';
 
-//TODO: Create dropdowns for each entry in list, this displays the viewbuilding method
+//TODO: Create dropdowns for each entry in list, this displays the viewBuilding method
 //TODO: Make add button a popup button rather than whatever tf that is
 
 
@@ -19,7 +20,7 @@ function App({ data }) {
   }
 
   function removeBuilding(id){
-    const list = newList.filter(building => building.id !== id);
+    const list = newList.filter(Building => Building.id !== id);
     setNewList(list);
     if(selectedBuilding === id){
       setSelectedBuilding(0);
@@ -37,6 +38,7 @@ function App({ data }) {
       </div>
       {}
       <Search filterUpdate={filterUpdate}/>
+      <DropdownBox />
       <main>
         <div className="row">
           <div className="column1">

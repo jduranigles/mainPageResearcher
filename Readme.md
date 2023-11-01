@@ -20,26 +20,26 @@ This readme file contains an outline and overview of the technologies and concep
 
 ## Assignment Overview
 
-For this assignment you will be building upon our UF directory application by creating a frontend interface with React.js to display listings, search/filter, as well as the ability to add new listings and delete old ones. Note: We won't connect the frontend to the back-end in this assignment, we will leave that for another bootcamp.
+For this assignment you will be Building upon our UF directory application by creating a frontend interface with React.js to display listings, search/filter, as well as the ability to add new listings and delete old ones. Note: We won't connect the frontend to the back-end in this assignment, we will leave that for another bootcamp.
 
 ### Starter Application
 
 *After using the [**create-vite**](https://vitejs.dev/guide/#scaffolding-your-first-vite-project) tool with the React template, you can replace the src file in the starter application with the src file from the Bootcamp #3 assignment repo*. You'll then see the following files in your project directory:
 
-- *src/data/data.js* - A list of buildings formatted to work with React and JSX to render the contents to the browser
+- *src/data/data.js* - A list of Buildings formatted to work with React and JSX to render the contents to the browser
 - *src/App.css* - An empty file that we aren't using for this project but do not delete it as it will affect the functioning of your program
 - *src/App.jsx* - This is the main application we are developing. The majority of our development will be in this file.
   - It prints out the directory listings
   - It has a text box for searching/filtering the results
-  - It has a display box for printing out more details about the selected building
+  - It has a display box for printing out more details about the selected Building
   - It imports and uses several React Component files to implement this functionality
 - *src/index.css* - A starter CSS template for you to use for this project
-- *src/main.jsx* - This file is used in creating the application file that you will be manipulating through the App.jsx file. This is where we have injected the data.js file and the building data that we pass around for the entire application.
+- *src/main.jsx* - This file is used in creating the application file that you will be manipulating through the App.jsx file. This is where we have injected the data.js file and the Building data that we pass around for the entire application.
 - React Component Files - *React uses components to organize and squirrel away functionality so that we can reuse it in multiple places. Ultimately, it allows our code to look cleaner and maximizes reusability for future development.*
-  - *src/components/BuildingList.jsx* - This is a React Component that prints the building code and the name to the screen
-  - *src/components/Credit.jsx* - This is a React Component that displays the credits for the building data
+  - *src/components/BuildingList.jsx* - This is a React Component that prints the Building code and the name to the screen
+  - *src/components/Credit.jsx* - This is a React Component that displays the credits for the Building data
   - *src/components/Search.jsx*  - This is a React Component that filters the contents of the list based on the user's input in the text box
-  - *src/components/ViewBuilding.jsx* - This is a React Component that allows us to view additional listing details for the current selected building when a user clicks on a listing
+  - *src/components/ViewBuilding.jsx* - This is a React Component that allows us to view additional listing details for the current selected Building when a user clicks on a listing
 
 ### Development Goals - To Do List
 
@@ -49,12 +49,12 @@ As you develop the solution to this assignment you will need to complete at leas
 
 - App.jsx - Main Application
   - Create the filterUpdate() function - to set the state of filter
-  - Create the selectUpdate() function - to set the state of selected building
+  - Create the selectUpdate() function - to set the state of selected Building
 
 - BuildingList.jsx: *In this file you will*
-  - Create a filter on the building list constant that allows you to filter on the name of the building
-  - Display only the buildings the meet the filter criteria
-  - Create an onClick listener action that will allow you to click on a building name and capture the ID
+  - Create a filter on the Building list constant that allows you to filter on the name of the Building
+  - Display only the Buildings the meet the filter criteria
+  - Create an onClick listener action that will allow you to click on a Building name and capture the ID
 
 - Search.jsx: *In this file you will*
   - Capture the text that is typed into the text box and store this value using the filterUpdate() function
@@ -62,12 +62,12 @@ As you develop the solution to this assignment you will need to complete at leas
   - Note: You will need to understand how to use ref values from form inputs
 
 - ViewBuilding.jsx:
-  - Capture building ID to look up the additional information for the building
-  - Return additional details of the building to be rendered on the screen for the user
+  - Capture Building ID to look up the additional information for the Building
+  - Return additional details of the Building to be rendered on the screen for the user
 
 - Create two new components in the components folder that allow you to add and remove elements from the list.
-  - AddBuilding.jsx - Add a building to the listings
-  - RemoveBuilding.jsx - remove a building from the listings
+  - AddBuilding.jsx - Add a Building to the listings
+  - RemoveBuilding.jsx - remove a Building from the listings
 
 - index.css - Style the User Interface of this app using CSS and Bootstrap 5 to make this app look professional and user-friendly, e.g.
   - style the listings
@@ -94,7 +94,7 @@ As you develop the solution to this assignment you will need to complete at leas
 
 4. It should auto-open http://localhost:5173 (because 5173 is [leetspeak](https://en.wikipedia.org/wiki/Leet#:~:text=Leet%20(or%20%221337%22),via%20reflection%20or%20other%20resemblance.) for vite) in the browser after it starts up a server for you. If a browser doesn't open up, copy and paste the link into your web browser with a starter page.
 
-5. After this you should open the folder and replace the `src` file with the `src` file from this Bootcamp #3 github repo. You should then be able to see a listing of the building codes and buildings, search/filter text box and space to output details about your project.
+5. After this you should open the folder and replace the `src` file with the `src` file from this Bootcamp #3 github repo. You should then be able to see a listing of the Building codes and Buildings, search/filter text box and space to output details about your project.
 
 6. Install Bootstrap 5 with `npm install bootstrap@5.3.2` or `yarn add bootstrap@5.3.2`. You might need to open another terminal to do this while your app is running.
 

@@ -1,27 +1,27 @@
 import React, {useState} from 'react';
 
 function AddBuilding({data, newList, setNewList}) {
-    // TODO: Add a building to the listing 
-    const [buildingID, setBuildingID] = useState(0);
-    const [buildingCode, setBuildingCode] = useState('');
-    const [buildingLatitude, setBuildingLatitude] = useState('');
-    const [buildingLongitude, setBuildingLongitude] = useState('');
-    const [buildingName, setBuildingName] = useState('');
-    const [buildingAddress, setBuildingAddress] = useState('');
+    // TODO: Add a Building to the listing 
+    const [BuildingID, setBuildingID] = useState(0);
+    const [BuildingCode, setBuildingCode] = useState('');
+    const [BuildingLatitude, setBuildingLatitude] = useState('');
+    const [BuildingLongitude, setBuildingLongitude] = useState('');
+    const [BuildingName, setBuildingName] = useState('');
+    const [BuildingAddress, setBuildingAddress] = useState('');
     
     function addBuildingFunc(){
-        const building = {
-            id: buildingID,
-            code: buildingCode,
-            name: buildingName,
+        const Building = {
+            id: BuildingID,
+            code: BuildingCode,
+            name: BuildingName,
             coordinates: {
-                latitude: buildingLatitude,
-                longitude: buildingLongitude
+                latitude: BuildingLatitude,
+                longitude: BuildingLongitude
             },
-            address: buildingAddress
+            address: BuildingAddress
         }
 
-        const list = [...newList, building];
+        const list = [...newList, Building];
         setNewList(list);
         console.log(list);
 
@@ -40,7 +40,7 @@ function AddBuilding({data, newList, setNewList}) {
             <label>Building ID:</label>
             <input
               type="text"
-              value={buildingID}
+              value={BuildingID}
               onChange={(e) => setBuildingID(e.target.value)}
             />
           </div>
@@ -48,7 +48,7 @@ function AddBuilding({data, newList, setNewList}) {
             <label>Building Code:</label>
             <input
               type="text"
-              value={buildingCode}
+              value={BuildingCode}
               onChange={(e) => setBuildingCode(e.target.value)}
             />
           </div>
@@ -56,7 +56,7 @@ function AddBuilding({data, newList, setNewList}) {
             <label>Building Name:</label>
             <input
               type="text"
-              value={buildingName}
+              value={BuildingName}
               onChange={(e) => setBuildingName(e.target.value)}
             />
           </div>
@@ -64,7 +64,7 @@ function AddBuilding({data, newList, setNewList}) {
             <label>Building Latitude:</label>
             <input
               type="text"
-              value={buildingLatitude}
+              value={BuildingLatitude}
               onChange={(e) => setBuildingLatitude(e.target.value)}
             />
           </div>
@@ -72,7 +72,7 @@ function AddBuilding({data, newList, setNewList}) {
             <label>Building Longitude:</label>
             <input
               type="text"
-              value={buildingLongitude}
+              value={BuildingLongitude}
               onChange={(e) => setBuildingLongitude(e.target.value)}
             />
           </div>
@@ -80,7 +80,7 @@ function AddBuilding({data, newList, setNewList}) {
             <label>Building Address:</label>
             <input
               type="text"
-              value={buildingAddress}
+              value={BuildingAddress}
               onChange={(e) => setBuildingAddress(e.target.value)}
             />
           </div>
