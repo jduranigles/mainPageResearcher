@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Popup from 'reactjs-popup';
 import Search from './components/Search';
 import ViewBuilding from './components/ViewBuilding';
 import BuildingList from './components/BuildingList';
@@ -7,6 +8,7 @@ import Credit from './components/Credit';
 
 //TODO: Create dropdowns for each entry in list, this displays the viewbuilding method
 //TODO: Make add button a popup button rather than whatever tf that is
+//TODO: Add filter dropdown
 
 
 function App({ data }) {
@@ -63,13 +65,33 @@ function App({ data }) {
               data = {data} selectedBuilding={selectedBuilding} removeBuilding = {removeBuilding}
             />
           </div>
-          <div className="column3">
-            <AddBuilding 
+          <Popup trigger=
+                {<button> Click to add study </button>} 
+                modal nested>
+                {
+                    close => (
+                        <div className='modal'>
+                            <AddBuilding 
+                              data = {data}
+                              newList = {newList}
+                              setNewList = {setNewList}
+                            />
+                            <div>
+                                <button onClick=
+                                    {() => close()}>
+                                        Close
+                                </button>
+                            </div>
+                        </div>
+                    )
+                }
+            </Popup>
+            {/* <AddBuilding 
               data = {data}
               newList = {newList}
               setNewList = {setNewList}
-            />
-          </div>
+            /> */}
+          
         </div>
         <Credit />
       </main>
