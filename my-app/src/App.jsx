@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import Popup from 'reactjs-popup';
 import Search from './components/Search';
 import ViewBuilding from './components/ViewBuilding';
 import BuildingList from './components/BuildingList';
@@ -9,7 +8,6 @@ import DropdownBox from './components/DropdownBox';
 
 //TODO: Create dropdowns for each entry in list, this displays the viewBuilding method
 //TODO: Make add button a popup button rather than whatever tf that is
-//TODO: Add filter dropdown
 
 
 function App({ data }) {
@@ -88,12 +86,6 @@ function App({ data }) {
                     )
                 }
             </Popup>
-            {/* <AddBuilding 
-              data = {data}
-              newList = {newList}
-              setNewList = {setNewList}
-            /> */}
-          
         </div>
         <Credit />
       </main>
