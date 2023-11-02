@@ -12,18 +12,7 @@ function ViewBuilding({data, selectedBuilding, removeBuilding}) {
           Building Name: {selected.name}
         </p>
         <p>
-          Building Code: {selected.code}
-        </p>
-        <p>
           Building ID: {selected.id}
-        </p>
-        <p>
-          Building Address: {selected.address}
-        </p>
-        <p>
-          Building Coordinates: 
-            Latitude: {selected.coordinates.latitude}
-            &nbsp;Longitude: {selected.coordinates.longitude}
         </p>
         <button onClick={deleteBuilding}>Remove Building</button>
       </div>

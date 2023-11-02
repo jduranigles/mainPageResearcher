@@ -5,6 +5,7 @@ import BuildingList from './components/BuildingList';
 import AddBuilding from './components/AddBuilding';
 import Credit from './components/Credit';
 import DropdownBox from './components/DropdownBox';
+import Popup from 'reactjs-popup';
 
 //TODO: Create dropdowns for each entry in list, this displays the viewBuilding method
 //TODO: Make add button a popup button rather than whatever tf that is
